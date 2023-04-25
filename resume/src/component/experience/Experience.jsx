@@ -56,7 +56,7 @@ function Experience() {
               <i className="fa-solid fa-check"></i>
               <div>
                 <h4>MUI</h4>
-                <small className="text-light"></small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
