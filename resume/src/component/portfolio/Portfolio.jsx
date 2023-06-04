@@ -162,10 +162,10 @@ function Portfolio() {
           <div className="portfolio_item-image">
             <img src={geegpay} alt="port1" />
           </div>
-          <h3>Geegpay Clone Frontend</h3>
+          <h3>Geegpay Clone</h3>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Tun95/geegpay_clone_frontend"
+              href="https://github.com/Tun95/geegpay_clone"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
@@ -173,7 +173,7 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://geegpay-clone-frontend.vercel.app/"
+              href="https://geegpay-clone.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
