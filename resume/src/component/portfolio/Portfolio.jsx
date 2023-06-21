@@ -7,6 +7,7 @@ import play from "../../asset/play.jpg";
 import game from "../../asset/game.jpg";
 import gamead from "../../asset/gamead.jpg";
 import geegpay from "../../asset/geegpay.png";
+import procanes from "../../asset/procanes.png" 
 
 function Portfolio() {
   return (
@@ -174,6 +175,30 @@ function Portfolio() {
             </a>
             <a
               href="https://geegpay-clone.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={procanes} alt="port1" />
+          </div>
+          <h3>ProCanes</h3>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/Tun95/procanes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Github
+            </a>
+            <a
+              href="https://procanes.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
