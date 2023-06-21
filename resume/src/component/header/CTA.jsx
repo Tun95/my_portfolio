@@ -1,5 +1,5 @@
 import React from "react";
-import TunjiAkande from "../../asset/TunjiAkande.pdf";
+import TunjiAkande from "../../asset/Resume.pdf";
 
 function CTA() {
   return (
