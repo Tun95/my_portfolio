@@ -55,6 +55,13 @@ function Experience() {
             <article className="experience_details">
               <i className="fa-solid fa-check"></i>
               <div>
+                <h4>Redux</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <i className="fa-solid fa-check"></i>
+              <div>
                 <h4>MUI</h4>
                 <small className="text-light">Experienced</small>
               </div>
@@ -75,6 +82,13 @@ function Experience() {
               <i className="fa-solid fa-check"></i>
               <div>
                 <h4>MongoDb</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <i className="fa-solid fa-check"></i>
+              <div>
+                <h4>Express Js</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>

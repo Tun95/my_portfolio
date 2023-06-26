@@ -1,58 +1,44 @@
-import React, { useReducer, useState } from "react";
+import React from "react";
 import "./contact.css";
 import { useFormik } from "formik";
-import { contactSchema } from "../../schema";
+import * as Yup from "yup";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { request } from "../../base_url/Base_URL";
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "POST_REQUEST":
-      return { ...state, loading: true };
-    case "POST_SUCCESS":
-      return { ...state, loading: false };
-    case "POST_FAIL":
-      return { ...state, loading: false };
-
-    default:
-      return state;
-  }
-};
 function Contact() {
-  const [{ loading, error }, dispatch] = useReducer(reducer, {
-    loading: true,
-    error: "",
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string()
+      .email("Invalid email address")
+      .required("Email is required"),
+    subject: Yup.string().required("Subject is required"),
+    message: Yup.string().required("Message is required"),
   });
 
-  //SUBMIT FUNCTION
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [subject, setSubject] = useState();
-  const [message, setMessage] = useState();
-
-  const submitHandler = async (e, actions) => {
-    e.preventDefault();
-    if (!name || !email || !subject || !message) {
-      toast.error("one or more field is required", {
-        position: "bottom-center",
-      });
-    } else {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+    validationSchema: validationSchema,
+    onSubmit: async (values, actions) => {
       try {
-        const { data } = axios.post(`${request}/api/message`, {
-          name,
-          email,
-          subject,
-          message,
+        const response = await axios.post(`${request}/api/message`, {
+          name: values.name,
+          email: values.email,
+          subject: values.subject,
+          message: values.message,
         });
-        dispatch({ type: "POST_SUCCESS", payload: data });
         toast.success("Email sent successfully", { position: "bottom-center" });
+        actions.resetForm();
       } catch (err) {
-        dispatch({ type: "POST_FAIL" });
-        toast.error("Message fail to send", { position: "bottom-center" });
+        toast.error("Message failed to send", { position: "bottom-center" });
       }
-    }
-  };
+    },
+  });
 
   return (
     <section id="contact">
@@ -91,44 +77,73 @@ function Contact() {
             </a>
           </article>
         </div>
-        <form action="" onSubmit={submitHandler}>
+        <form onSubmit={formik.handleSubmit}>
           <span>
             <input
               type="text"
               name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Your Full name"
+              value={formik.values.name}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              className={
+                formik.errors.name && formik.touched.name ? "input-error" : ""
+              }
+              placeholder="Your Full Name"
             />
+            {formik.touched.name && formik.errors.name && (
+              <small className="error">{formik.errors.name}*</small>
+            )}
           </span>
           <span>
             <input
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
               name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              className={
+                formik.errors.email && formik.touched.email ? "input-error" : ""
+              }
               placeholder="Your Email"
             />
+            {formik.touched.email && formik.errors.email && (
+              <small className="error">{formik.errors.email}*</small>
+            )}
           </span>
           <span>
             <input
               type="text"
               name="subject"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
+              value={formik.values.subject}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              className={
+                formik.errors.subject && formik.touched.subject
+                  ? "input-error"
+                  : ""
+              }
               placeholder="Your Message Subject Here"
-            />{" "}
+            />
+            {formik.touched.subject && formik.errors.subject && (
+              <small className="error">{formik.errors.subject}*</small>
+            )}
           </span>
           <span>
             <textarea
               name="message"
-              id=""
-              cols="30"
-              rows="10"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              value={formik.values.message}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              className={
+                formik.errors.message && formik.touched.message
+                  ? "input-error"
+                  : ""
+              }
               placeholder="Your Message"
             ></textarea>
+            {formik.touched.message && formik.errors.message && (
+              <small className="error">{formik.errors.message}*</small>
+            )}
           </span>
           <button type="submit" className="btn btn-primary">
             Send Message

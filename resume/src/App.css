@@ -14,7 +14,7 @@
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
-
+  --color-red: #f62f5e;
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
@@ -100,16 +100,17 @@ img {
 
 input.input-error,
 textarea.input-error {
-  border-color: #e94560;
+  border-color: var(--color-red);
 }
 .fa-circle-exclamation {
   margin-top: -42px;
-  color: #e94560;
+  color: var(--color-red);
   float: right;
   margin-right: 10px;
 }
 .error {
-  color: #e94560;
+  color: var(--color-red);
+  font-size: 12px;
 }
 
 /*======= MEDIA QUERIES (MEDIUM DEVICES) =======*/

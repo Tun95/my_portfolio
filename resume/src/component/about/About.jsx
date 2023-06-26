@@ -28,17 +28,15 @@ function About() {
             <article className="about_card">
               <i className="fa-solid fa-folder"></i>
               <h5>Projects</h5>
-              <small>3+ Completed in MERN</small>
+              <small>??+ Completed in MERN</small>
             </article>
           </div>
           <p>
-            Hi, Welcome to my porfolio my name is Olatunji Akande. I am a
-            professional UX-UI designer graphic designer, Full stack Website
-            (MERN) and website developer (HTML, CSS and Javascript). My
-            Speciality is in making websites on the basis of UX-UI, Full Stack
-            (MERN) web app and graphical aspect. I have been doing this work for
-            quite some time and I will provide you with the great services in
-            simple and innovative way.
+            Welcome to my portfolio! I'm Olatunji Akande, a MERN developer
+            specializing in creating dynamic and interactive web applications.
+            With expertise in MongoDB, Express, React, and Node.js, I combine my
+            technical skills with a passion for delivering high-quality and
+            innovative solutions. Let's explore my work together!
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
