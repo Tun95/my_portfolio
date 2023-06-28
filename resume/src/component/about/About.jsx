@@ -18,7 +18,7 @@ function About() {
             <article className="about_card">
               <i className="fa-solid fa-award"></i>
               <h5>Experience</h5>
-              <small>4+ Years Working</small>
+              <small>4+ Years Experience</small>
             </article>
             <article className="about_card">
               <i className="fa-solid fa-users"></i>
