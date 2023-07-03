@@ -190,7 +190,7 @@ function Portfolio() {
           <h3>ProCanes</h3>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Tun95/procanes"
+              href="https://github.com/Tun95/procane"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
@@ -198,7 +198,7 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://procanes.vercel.app/"
+              href="https://procane.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
