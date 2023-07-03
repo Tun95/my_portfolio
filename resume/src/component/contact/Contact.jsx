@@ -69,7 +69,7 @@ function Contact() {
             <h4>WhatsApp</h4>
             {/* <h5>+2349160921639</h5> */}
             <a
-              href="https://wa.me/+2349160921639"
+              href="https://wa.me/+2348160970232"
               target="_blank"
               rel="noopener noreferrer"
             >
