@@ -183,7 +183,6 @@ function Portfolio() {
             </a>
           </div>
         </article>
-
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={shop} alt="port1" />
