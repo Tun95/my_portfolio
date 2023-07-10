@@ -7,7 +7,7 @@ import play from "../../asset/play.jpg";
 import game from "../../asset/game.jpg";
 import gamead from "../../asset/gamead.jpg";
 import geegpay from "../../asset/geegpay.png";
-import procanes from "../../asset/procanes.png" 
+import procanes from "../../asset/procanes.png";
 
 function Portfolio() {
   return (
@@ -17,12 +17,12 @@ function Portfolio() {
       <div className="container portfolio_container">
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={shop} alt="port1" />
+            <img src={procanes} alt="port1" />
           </div>
-          <h3>Shopmate (1)</h3>
+          <h3>ProCanes</h3>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Tun95/shopmate"
+              href="https://github.com/Tun95/procane"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
@@ -30,7 +30,31 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://shopmate-0b17.onrender.com/"
+              href="https://procane.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={geegpay} alt="port1" />
+          </div>
+          <h3>Geegpay Clone</h3>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/Tun95/geegpay_clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Github
+            </a>
+            <a
+              href="https://geegpay-clone.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
@@ -159,14 +183,15 @@ function Portfolio() {
             </a>
           </div>
         </article>
+
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={geegpay} alt="port1" />
+            <img src={shop} alt="port1" />
           </div>
-          <h3>Geegpay Clone</h3>
+          <h3>Shopmate (1)</h3>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Tun95/geegpay_clone"
+              href="https://github.com/Tun95/shopmate"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
@@ -174,31 +199,7 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://geegpay-clone.vercel.app/"
-              className="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={procanes} alt="port1" />
-          </div>
-          <h3>ProCanes</h3>
-          <div className="portfolio_item-cta">
-            <a
-              href="https://github.com/Tun95/procane"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https://procane.vercel.app/"
+              href="https://shopmate-0b17.onrender.com/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
