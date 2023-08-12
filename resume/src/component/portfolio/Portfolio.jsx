@@ -257,7 +257,7 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://shopmate-0b17.onrender.com/"
+              href="https://shopmate-one.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
