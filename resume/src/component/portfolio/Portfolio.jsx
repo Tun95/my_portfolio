@@ -7,7 +7,7 @@ import play from "../../asset/play.jpg";
 import game from "../../asset/game.jpg";
 import gamead from "../../asset/gamead.jpg";
 import geegpay from "../../asset/geegpay.png";
-import procanes from "../../asset/procanes.png";
+import shopfinity from "../../asset/shopfinity.png";
 
 function Portfolio() {
   return (
@@ -17,7 +17,7 @@ function Portfolio() {
       <div className="container portfolio_container">
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={procanes} alt="port1" />
+            <img src={shopfinity} alt="port1" />
           </div>
           <h3>ShopFinity</h3>
           <small>
