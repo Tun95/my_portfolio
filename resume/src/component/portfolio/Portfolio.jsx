@@ -38,7 +38,7 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://procane.vercel.app/"
+              href="https://shopfinity-app.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
