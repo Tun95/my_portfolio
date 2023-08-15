@@ -19,9 +19,9 @@ function Portfolio() {
           <div className="portfolio_item-image">
             <img src={procanes} alt="port1" />
           </div>
-          <h3>ProCanes</h3>
+          <h3>ShopFinity</h3>
           <small>
-            Procances is a versatile ecommerce platform, supporting multiple
+            Shopfinity is a versatile ecommerce platform, supporting multiple
             vendors and currencies. With 6 payment options—PayPal, Paystack,
             Paytm, Razorpay, Stripe, and Cash on Delivery. To login as admin:
             <br />
