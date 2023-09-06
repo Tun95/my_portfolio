@@ -38,7 +38,7 @@ function Portfolio() {
               Github
             </a>
             <a
-              href="https://shopfinity-app.vercel.app/"
+              href="https://www.shopfinity.xyz/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
