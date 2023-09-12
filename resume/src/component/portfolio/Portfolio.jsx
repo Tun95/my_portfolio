@@ -30,7 +30,7 @@ function Portfolio() {
           </small>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Tun95/procane"
+              href="https://github.com/Tun95/shopfinity"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"

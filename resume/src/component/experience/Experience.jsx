@@ -28,7 +28,7 @@ function Experience() {
               <i className="fa-solid fa-check"></i>
               <div>
                 <h4>Javascript</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Experienced</small>
               </div>{" "}
             </article>
             <article className="experience_details">
