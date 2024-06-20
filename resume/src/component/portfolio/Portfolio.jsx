@@ -31,14 +31,6 @@ function Portfolio() {
           </small>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Tun95/poqechopz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn disabled"
-            >
-              Github
-            </a>
-            <a
               href="https://poqechopz.vercel.app/"
               className="btn btn-primary"
               target="_blank"
@@ -55,14 +47,6 @@ function Portfolio() {
           <h3>MernStore</h3>
           <small>Currently being worked on</small>
           <div className="portfolio_item-cta">
-            <a
-              href="https://github.com/Tun95/mernstore"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn disabled"
-            >
-              Github
-            </a>
             <a
               href="https://mernstore-app.vercel.app/"
               className="btn btn-primary"
@@ -87,14 +71,6 @@ function Portfolio() {
             <strong>Password: </strong>Shopmate400
           </small>
           <div className="portfolio_item-cta">
-            <a
-              href="https://github.com/Tun95/shopfinity"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn disabled"
-            >
-              Github
-            </a>
             <a
               href="https://www.shopfinity.xyz/"
               className="btn btn-primary"
