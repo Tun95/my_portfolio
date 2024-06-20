@@ -9,6 +9,7 @@ import gamead from "../../asset/gamead.jpg";
 import geegpay from "../../asset/geegpay.png";
 import shopfinity from "../../asset/shopfinity.png";
 import mernstore from "../../asset/mernstore.png";
+import poqe from "../../asset/poqe.png";
 
 function Portfolio() {
   return (
@@ -16,6 +17,37 @@ function Portfolio() {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={poqe} alt="port1" />
+          </div>
+          <h3>PoQe Chopz</h3>
+          <small>
+            PoQe Chopz features state-of-the-art 3-piece marvel wheels,
+            meticulously crafted from 6061 forged aluminum. Available in 20, 22,
+            and 24-inch sizes, these custom-built wheels are the ultimate
+            upgrade for your vehicle, offering unparalleled creativity and
+            innovation.
+          </small>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/Tun95/poqechopz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn disabled"
+            >
+              Github
+            </a>
+            <a
+              href="https://poqechopz.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={mernstore} alt="port1" />
@@ -27,7 +59,7 @@ function Portfolio() {
               href="https://github.com/Tun95/mernstore"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn"
+              className="btn disabled"
             >
               Github
             </a>
@@ -59,7 +91,7 @@ function Portfolio() {
               href="https://github.com/Tun95/shopfinity"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn"
+              className="btn disabled"
             >
               Github
             </a>

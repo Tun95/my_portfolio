@@ -14,6 +14,8 @@
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
+  --color-gray: #bcbcbc;
+  --color-black: #2e2e2e;
   --color-red: #f62f5e;
   --transition: all 400ms ease;
 
@@ -84,10 +86,24 @@ a:hover {
   border: 1px solid var(--color-primary);
   transition: var(--transition);
 }
+.btn.disabled {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-black);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: not-allowed;
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-gray);
+}
 .btn:hover {
   background: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
+}
+.btn.disabled:hover {
+  background: var(--color-gray);
+  color: var(--color-black);
 }
 .btn-primary {
   background: var(--color-primary);
